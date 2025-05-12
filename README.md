@@ -18,12 +18,16 @@ Ele inclui funcionalidades como **inclusão, edição, exclusão e listagem de c
 ## ⚙️ Configuração do Projeto
 
 ### 📌 **1. Clone o repositório**
+```sh
 git clone https://github.com/Cammy92/the-guardian.git
+```
 
 ---
 
 ### 📌 **2. Instale as Dependências**
+```sh
 composer install
+```
 
 ---
 
@@ -31,7 +35,9 @@ composer install
 1️⃣ Crie um banco de dados the_guardian no MySQL.
 
 2️⃣ Importe o arquivo dump.sql localizado na pasta do projeto:
+```sh
 mysql -u root -p the_guardian < dump.sql
+```
 
 ---
 
@@ -43,6 +49,7 @@ Após criar o banco de dados e importar dump.sql, é necessário rodar um script
 Execute o seguinte comando:
 ```sh
 php script.php
+```
 
 📌 Isso atualizará a senha dos usuários no banco de dados, garantindo autenticação segura com hash.
 💡 Após rodar o script, os usuários podem alterar suas senhas diretamente no sistema sem necessidade de rodar esse comando novamente.
@@ -58,7 +65,9 @@ DB_PASS=
 ---
 
 ### 📌 4. Rode os testes
+```sh
 php vendor/bin/phpunit tests/
+```
 
 ---
 
