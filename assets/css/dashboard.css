@@ -1,0 +1,93 @@
+/* 🎨 Ajustes Globais da Dashboard */
+.dashboard-content {
+    margin-left: 230px; /* ✅ Respeita o espaço do menu lateral */
+    padding: 30px;
+    position: relative;
+    z-index: 1; /* ✅ Para não sobrepor o menu */
+    color: white;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+/* ✅ Estilizando títulos e parágrafos */
+.dashboard-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.dashboard-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+/* 📌 Estilizando o Menu Fixo dentro da Dashboard */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background-color: var(--verde-militar);
+    font-family: 'Cinzel Decorative', serif;
+    position: fixed; /* ✅ Mantém fixo na tela */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1000; /* ✅ Garante que o menu esteja sobre o conteúdo */
+}
+
+.sidebar-logo {
+    width: 120px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* ✅ Ajustando os links do menu */
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    padding: 15px;
+    text-align: left;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.sidebar nav ul li:hover {
+    background-color: var(--verde-musgo);
+    width: 100%;
+}
+
+/* ✅ Ajuste para botão de logout */
+.sidebar .logout {
+    color: var(--chumbo);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sidebar .logout:hover {
+    color: #fff;
+}
+
+/* 📱 Responsividade */
+@media screen and (max-width: 768px) {
+    .dashboard-content {
+        margin-left: 190px; /* ✅ Ajusta em telas menores */
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 180px;
+    }
+}

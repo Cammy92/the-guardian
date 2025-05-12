@@ -1,0 +1,28 @@
+# 🔹 Ignorar arquivos de ambiente
+.env
+config/database.php
+
+# 🔹 Ignorar dependências do Composer
+/vendor/
+
+# 🔹 Ignorar arquivos temporários do sistema
+*.log
+*.cache
+*.bak
+*.tmp
+
+# 🔹 Ignorar uploads e arquivos gerados
+/uploads/
+storage/
+
+# 🔹 Ignorar pastas do XAMPP
+.DS_Store
+Thumbs.db
+
+# 🔹 Ignorar chaves SSH e configurações do sistema
+*.pem
+*.key
+
+# 🔹 Ignorar pastas ocultas do editor
+.idea/
+.vscode/

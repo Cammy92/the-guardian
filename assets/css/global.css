@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+/* 🎨 Paleta de Cores */
+:root {
+    --verde-militar: #556B2F;
+    --verde-musgo: #3D5A3C;
+    --chumbo: #464646;
+    --cinza-input: #3a3a3a; /* ✅ Fundo dos inputs */
+}
+
+/* Reset básico */
+body {
+    font-family: 'Cinzel Decorative', serif; /* ✅ Fonte temática inspirada em Senhor dos Anéis */
+    margin: 0;
+    padding: 0;
+    background-color: var(--verde-musgo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

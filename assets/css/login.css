@@ -1,0 +1,91 @@
+/* 🎨 Paleta de Cores */
+:root {
+    --verde-militar: #556B2F;
+    --verde-musgo: #3D5A3C;
+    --chumbo: #464646;
+    --cinza-input: #3a3a3a; /* ✅ Fundo dos inputs */
+}
+
+/* Reset básico */
+body {
+    font-family: 'Cinzel Decorative', serif; /* ✅ Fonte temática inspirada em Senhor dos Anéis */
+    margin: 0;
+    padding: 0;
+    background-color: var(--verde-musgo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container centralizado */
+.login-container {
+    background-color: var(--verde-militar);
+    padding: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* 📌 Estilizando o Logo */
+.logo {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+/* Inputs e botão */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--verde-militar);
+    background-color: var(--verde-musgo); /* ✅ Fundo dos inputs cinza escuro */
+    color: white; /* ✅ Texto branco para contraste */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--verde-musgo);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Cinzel Decorative', serif; /* ✅ Botão com fonte épica */
+}
+
+button:hover {
+    background-color: var(--chumbo);
+}
+
+/* 📱 Responsividade */
+@media screen and (max-width: 600px) {
+    .login-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+}
