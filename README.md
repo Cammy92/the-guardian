@@ -29,6 +29,7 @@ composer install
 
 ### 📌 3. Configure o banco de dados
 1️⃣ Crie um banco de dados the_guardian no MySQL.
+
 2️⃣ Importe o arquivo dump.sql localizado na pasta do projeto:
 mysql -u root -p the_guardian < dump.sql
 
@@ -37,6 +38,7 @@ mysql -u root -p the_guardian < dump.sql
 
 🔑 4. Hashear a senha dos usuários
 Após criar o banco de dados e importar dump.sql, é necessário rodar um script para hashear a senha dos usuários criados sem criptografia.
+
 ⚠️ Importante: Esse script só precisa ser executado uma vez para inicializar os usuários. Se o sistema já estiver rodando com login funcional, não é necessário executar novamente.
 Execute o seguinte comando:
 
