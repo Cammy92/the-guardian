@@ -7,28 +7,30 @@ body {
     padding: 0;
 }
 
-/* 📌 Sidebar */
+/* 📌 Estilizando o Menu Fixo dentro da Dashboard */
 .sidebar {
-    width: 220px;
+    width: 260px;
     height: 100vh;
     background-color: var(--verde-militar);
-    position: fixed;
+    font-family: 'Cinzel Decorative', serif;
+    position: fixed; /* ✅ Mantém fixo na tela */
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    z-index: 1000;
+    z-index: 1000; /* ✅ Garante que o menu esteja sobre o conteúdo */
 }
 
-/* ✅ Logo */
 .sidebar-logo {
     width: 120px;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
 }
 
-/* ✅ Navegação */
+/* ✅ Ajustando os links do menu */
 .sidebar nav ul {
     list-style: none;
     padding: 0;
@@ -37,19 +39,32 @@ body {
 
 .sidebar nav ul li {
     padding: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 .sidebar nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     display: block;
 }
 
-.sidebar nav ul li a:hover {
+.sidebar nav ul li:hover {
     background-color: var(--verde-musgo);
+    width: 100%;
 }
+
+/* ✅ Ajuste para botão de logout */
+.sidebar .logout {
+    color: var(--chumbo);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sidebar .logout:hover {
+    color: #fff;
+}
+
 
 /* 📌 Ajustando o Conteúdo */
 .content {

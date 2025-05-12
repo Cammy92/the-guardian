@@ -52,9 +52,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         <nav>
             <ul>
-                <li><a href="dashboard.php">🏠 Início</a></li>
-                <li><a href="listar_clientes.php">👤 Clientes</a></li>
-                <li><a href="../controllers/LoginController.php?logout=true" class="logout">🚪 Sair</a></li>
+                <li><a href="dashboard.php">Início</a></li>
+                <li><a href="listar_clientes.php">Clientes</a></li>
+                <li><a href="../controllers/LoginController.php?logout=true" class="logout">Sair</a></li>
             </ul>
         </nav>
     </div>
