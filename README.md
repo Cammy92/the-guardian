@@ -41,7 +41,7 @@ Após criar o banco de dados e importar dump.sql, é necessário rodar um script
 
 ⚠️ Importante: Esse script só precisa ser executado uma vez para inicializar os usuários. Se o sistema já estiver rodando com login funcional, não é necessário executar novamente.
 Execute o seguinte comando:
-
+```sh
 php script.php
 
 📌 Isso atualizará a senha dos usuários no banco de dados, garantindo autenticação segura com hash.
